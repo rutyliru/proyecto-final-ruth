@@ -1,0 +1,454 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+  	font-style: italic;
+}
+html{
+	scroll-behavior:smooth; /* para que se deslice suave la web*/
+}
+
+                      /*HEADER Y ENLACES*/
+.contenedor{
+	background:#c7e8e5;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.contenedor header{
+	max-width: 1100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+}
+.contenedor header .nombre a{
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	color:#1b2523;
+	text-decoration: none;
+}
+.contenedor header ul{
+	display: flex;
+	list-style: none;
+}
+
+.contenedor header nav ul li a{
+	text-align: none;
+	color:#1b2523;
+	margin: 0 15px;
+	padding: 3px;
+	transition: 0.5s;
+	text-decoration: none;
+}
+.contenedor header nav ul li a:hover{
+	color:#f17885;
+	                          /*HASTA AQUI HEADER Y ENLACES*/
+}
+.nav-responsive{
+	background-color:#f17885 ;
+	color: #1b2523;
+	padding: 5px 10px;
+	border-radius: 5px;      /*HAMBURGUESA DE ENLACES AL HACERSE MAS PEQUEÑO
+								SOLO APARECE CUANDO CUANDO SE MINIMIZA DESDE UNA MEDIDA*/
+	display:none;
+	cursor: pointer;
+}
+.inicio{           /* SECCION DE INICIO*/
+	background:linear-gradient(to top, rgb(202,147,153),rgb(158,193,189));
+	background-size: cover;
+	height: 100vh;
+	color:#1b2523 ;					
+	display: flex;
+	align-items: center;
+}
+.inicio .contenido-nombre{
+	padding: 20px;
+	background-color:linear-gradient(to top, rgb(202,147,153),rgb(158,193,189));
+	max-width:320%;     				/* FOTO Y CONTENIDO*/
+	margin:auto;							
+	text-align: center;
+}
+.inicio .contenido-nombre img{
+	border: 18px solid #1b2523 ;
+	display: block;
+	width: 60%;							/*FOTO*/
+	margin: auto;
+	margin-top: 70px;
+}
+.inicio .contenido-nombre h1{
+	margin-top: 20px;
+	font-size: 40px;
+	font-family: "Montserrat", sans-serif; /*NOMBRE*/
+}
+.inicio .contenido-nombre h2{
+	font-size: 15px;					/*NOMBRE*/
+	font-weight:bold;
+}
+.inicio .contenido-nombre .redes-sociales a{
+	color:#2F4F4F;
+	text-decoration: none;
+	width: 42px;
+	height: 42px;
+	line-height:42px;
+	margin: 40px 5px;     /*REDES SOCIALES*/
+	font-size: 20px;
+	transition: 0.3s;
+	display:inline-block;
+}
+.inicio .contenido-nombre .redes-sociales a:hover{
+	background-color:#f17885 ;
+}  								
+.personal{
+	background-color:#c7e8e5 ;
+	color:#1b2523 ;						/* TITULO*/	
+	padding: 50px 20px;
+}
+.personal .contenedor{
+	max-width:1100px ;
+	margin: auto;						/* CONTENIDO DEL PARRAFO*/
+}
+.personal h2{
+	font-size: 45px;
+	text-align: center;
+	padding: 20px 0;           			/* CONTENIDO DEL PARRAFO*/
+}
+.personal .contenido p{
+	font: 18px;
+	line-height: 22px;					/* CONTENIDO DEL PARRAFO*/
+	margin-bottom: 30px;
+}
+.personal .lista .datos h3{
+	font-size: 30px;					/*DATOS*/
+	margin-bottom: 25px;
+}
+.personal .lista .datos ul{
+	list-style: none;                 	/*DATOS*/
+}
+.personal .lista .datos ul li{
+	margin: 12px 0;						/*DATOS*/
+}
+.personal .lista .datos ul li strong{
+	display: inline-block;
+	color:#1b2523;						/*DATOS*/
+	width: 130px;
+}
+.personal button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #1b2523;
+	display: block;						/*BOTON DE CV*/
+	margin: 20px auto;
+	font-size: 15px;
+	position: relative;
+	z-index: 10;
+}
+.personal button .deslizar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;						/*BOTON*/
+	background-color:#f17885;
+	z-index:-1;
+	transition: 1s;
+}
+.personal button:hover .deslizar{
+	width: 100%;
+}										/*HASTA AQUI INICIO*/
+.trayectoria{
+	background-color:#f5cfd3 ;   /*SECCION DE TRAYECTORIA*/
+	color:#1b2523 ;
+	padding: 50px 20px;
+}
+.trayectoria .contenido{
+	max-width:1100px ;  			/*CONTENIDO*/
+	margin: auto;
+}
+.trayectoria h2{
+	font-size: 45px;
+	text-align: center; 			 /*TITULO*/
+	padding: 20px 0;
+}
+.trayectoria .contenido p{
+	font: 18px;						/*TEXTO*/
+	line-height: 22px;
+	margin-bottom: 30px;
+}								/*FIN TRAYECTORIA*/
+.asesoria{
+	background-color:#c7e8e5 ;	/*SECCION DE LA ASESORIA*/
+	color:#1b2523 ;
+	padding: 50px 20px;
+}
+.asesoria .contenido{
+	max-width:1100px ;     		/*CONTENIDO*/
+	margin: auto;
+}
+.asesoria h2{
+	font-size: 45px;
+	text-align: center;
+	padding: 20px 0;			/*TITULO*/
+}
+.asesoria h3{
+	font-size: 25px;
+	text-align: center;
+	padding: 20px 0;			/*SUBTITULO*/
+}
+.asesoria .contenido p{
+	font: 18px;
+	line-height: 22px;			/*TEXTO*/
+	margin-bottom: 30px;
+}
+.asesoria h4{
+	font-size: 15px;
+	text-align:left;			/*TITULO LISTA*/
+	padding: 20px 0;
+	
+}
+.asesoria .contenido ul li{
+	font: 18px;					/*LISTA*/
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+.asesoria .contenido p span{
+	color: #f17885;				/*RESALTADO DENTRO DEL TEXTO*/
+	font-weight: bold;
+}						/*FIN SECCION*/
+.fotos{										/*SECCION DE GALERIA DE FOTOS*/
+	background-color:#f5cfd3;
+	color:#1b2523 ;				/*POSICION Y FONDO*/
+	padding: 50px 20px;						
+}
+.fotos .contenido{
+	max-width:1100px ;
+	margin: auto;				/*CONTENIDO*/
+}
+.fotos h2{
+	font-size: 45px;
+	text-align: center;			/*TITULO*/
+	padding: 20px 0;
+}
+.fotos .galeria{
+	display: flex;
+	flex-wrap: wrap;			/*DISPOSICION DE LA GALERIA*/
+	justify-content: space-around;
+}
+.fotos .galeria .comida{
+	position: relative;
+	max-width: 340px;
+	height: fit-content;		/*EXPECIFICACION PARA LAS POSICION*/
+	margin: 10px;
+	cursor: pointer;
+}
+.fotos .galeria .comida img{
+	width: 100%;				/*POSICION DE LAS FOTOS*/
+	display: block;
+}
+.fotos .galeria .comida .deslizar{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: linear-gradient( rgb(202,147,153),rgb(158,193,189));
+	display: flex;
+	flex-direction:column;
+	justify-content: center;	/*ANIMACION QUE TAPA LAS FOTOS*/
+	transition: 1s;
+	font-size: 18px;
+	letter-spacing: 3px;
+	opacity: 0;
+}
+.fotos .galeria .comida .deslizar h3{
+	margin-bottom: 20px;
+	transition: 1s;				/*TEXTO DE DENTRO DE LAS FOTOS*/
+}
+.fotos .galeria .comida .deslizar:hover{
+	opacity: 1;
+}								/*FIN SECCION FOTO*/
+.contacto{									
+	background-image: url(img/mesa.jpeg);  /*SECCION CONTACTO*/
+	background-color:#c7e8e5;
+	color:#1b2523;				/*FOTO DE CONTACTO*/
+	padding:50px 0;
+}
+.contacto .contenido{
+	max-width: 1100px;			/*CONTENIDO*/
+	margin: auto;
+}
+.contacto h2{
+	font-size: 45px;
+	text-align: center;			/*TITULO*/
+	padding: 20px 0;
+}
+.contacto .foto{
+	display: flex;				/*POSICION FOTO*/
+}
+.contacto .formulario{
+	width: 50%;
+	padding: 10px;				/*POSICIONAMIENTO FORMULARIO*/
+	position: relative;
+}
+.contacto .formulario input, .contacto .formulario textarea{
+	display: block;
+	width:60%;
+	padding: 15px;
+	border:solid #1b2523 ;
+	margin-bottom:15px;			/*ESTILO DEL LAS AREAS DE TEXTO*/
+	background-color:#f5cfd3;
+	color:#1b2523;
+	font-size: 18px;
+}
+.contacto button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #1b2523;
+	display: block;				
+	margin: 20px auto;			/*BOTON DE MENSAJE*/
+	font-size: 15px;
+	position: relative;
+	z-index: 10;
+}
+.contacto button .deslizar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;				/*ANIMACION BOTON*/
+	background-color:#f5cfd3;
+	z-index: -1;
+	transition: 1s;
+}
+.contacto button:hover .deslizar{
+	width: 100%;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;						/* POSICION Y ESTILO MODAL*/
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-contenido{
+  background-color:white;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 3px solid #1b2523;  	/* CUADRO MODAL*/
+  width: 80%;
+  max-width: 400px;
+}
+.cerrar {
+  color: #aaa;
+  float:right;
+  font-size:20px;       		/* X */
+  font-weight: bold;
+}
+.cerrar:hover,
+.cerrar:focus{
+  color: black;					/*ESTILO DE LA X */
+  cursor: pointer;
+}
+footer{
+	background-color:#f5cfd3;
+	padding: 50px 0 30px 0;
+	text-align: center;			/*ESTILO FOOTER*/
+	position: relative;
+	width: 100%;
+}
+footer .arriba{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color:#5f9ea0;
+	color:#1b2523;
+	position: absolute;			/*ESTILO Y POSICION DEL ICONO PARA SUBIR*/
+	left: 48%;					
+	top: -25px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-size: 20px;
+}
+@media screen and (max-width:980px){
+	nav{
+		display: none;
+	}
+	.nav-responsive{
+		display: block;
+	}
+	nav.responsive{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 75px;
+		background-color:#f17885 ;
+		width: 180px;
+	}
+	nav.responsive ul{
+		display: block !important;  /*murio un panda en la china*/
+	}
+	nav.responsive ul li{
+		border-bottom: 1px solid #1b2523 ;
+		padding: 10px 0;
+	}
+}
+@media screen and (max-width:760px) and (max-width:480px){
+	.inicio  img h1 h2{
+		display: block;
+		width: 100%;
+	}
+	.personal h2 p{
+		display: block;
+	}
+	.lista .datos ul{
+		display: block;
+		width: 100%;
+	}
+	.lista .datos ul li buttom{
+		width: 100%;
+	}
+	.trayectoria h2 p{
+		display: block;
+		width: 100%;
+	}
+	.asesoria h2 h3 p{
+		display: block;
+	}
+	.asesoria h4 ul li{
+		width: 100%;
+	}
+	.fotos h2{
+		display: block;
+	}
+	.fotos .galeria img h3{
+		display: block;
+		width: 100%;
+	}
+	.contacto h2{
+		display: block;
+	}
+	.foto .formulario{
+		display:block;
+		width:100%;
+	}
+	.imagen img{
+		display: block;
+		width: 100%;
+	}
+}
+
+
+	
+	
+
+
+
+
+
+	
