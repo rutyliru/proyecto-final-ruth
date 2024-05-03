@@ -146,6 +146,7 @@ html{
 	font-size: 15px;
 	position: relative;
 	z-index: 10;
+	color:#1b2523;
 }
 .personal button .deslizar{
 	position: absolute;
@@ -312,6 +313,7 @@ html{
 	font-size: 15px;
 	position: relative;
 	z-index: 10;
+	color:#1b2523;
 }
 .contacto button .deslizar{
 	position: absolute;
